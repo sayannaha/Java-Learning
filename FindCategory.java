@@ -1,3 +1,5 @@
+import java.sql.Date;
+
 public class FindCategory {
     public String getCategory(String input) {
         String categories[] = { "MOBILE", "TV", "CLOTH", "HOME", "KITCHEN", "PET", "TOY", "RANDOM" };
@@ -20,5 +22,19 @@ public class FindCategory {
             price = maxRPrice(product);
         }
         return price;
+    }
+
+    public Date deliveryDate(String product, int distance) {
+        Date currentDate = new Date(distance);
+        if (product != null) {
+            if (distance <= 15) {
+                return currentDate;
+            } else if (distance <= 30) {
+                return currentDate;
+            } else {
+                return currentDate;
+            }
+        }
+        return null;
     }
 }
