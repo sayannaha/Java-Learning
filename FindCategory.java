@@ -1,5 +1,5 @@
-import java.sql.Date;
-
+package com.tutorial.DSA;
+import java.time.LocalDate;
 public class FindCategory {
     public String getCategory(String input) {
         String categories[] = { "MOBILE", "TV", "CLOTH", "HOME", "KITCHEN", "PET", "TOY", "RANDOM" };
@@ -10,11 +10,9 @@ public class FindCategory {
         }
         return null;
     }
-
     public Double maxRPrice(String product) {
         return (product.length() * 1000 / .75);
     }
-
     public Double getPrice(String product) {
         Double price = null;
         String catg = getCategory(product);
@@ -23,16 +21,15 @@ public class FindCategory {
         }
         return price;
     }
-
-    public Date deliveryDate(String product, int distance) {
-        Date currentDate = new Date(distance);
+    public LocalDate deliveryDate(String product, int distance) {
+    	LocalDate currentDate = LocalDate.now();
         if (product != null) {
             if (distance <= 15) {
                 return currentDate;
             } else if (distance <= 30) {
-                return currentDate;
+                return currentDate.plusDays(1);
             } else {
-                return currentDate;
+                return currentDate.plusDays(3);
             }
         }
         return null;
