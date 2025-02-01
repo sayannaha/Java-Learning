@@ -1,4 +1,4 @@
-package com.tutorial.DSA;
+package com.tutorial;
 import static org.junit.jupiter.api.Assertions.*;
 import org.junit.jupiter.api.Test;
 class SortArrayTest {
