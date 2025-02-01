@@ -6,7 +6,7 @@ public class SortArray {
 	 * Parameters: Array of number
 	 * Return: Array of number
 	 */
-	private int[] sortMyArray(int[] arr) {
+	public int[] sortMyArray(int[] arr) {
 		if (arr.length < 1) {
 			return null;
 		}
