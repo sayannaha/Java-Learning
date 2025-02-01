@@ -4,7 +4,7 @@ public class ComputeSumArray {
 	/*
 	 * Description: Method to find out the sum of the Elements of Array
 	 * Parameter: Array of Numbers
-	 * Return: Array of Numbers
+	 * Return: Integer
 	 */
 	public int computeSumOfArray(int[] arr) {
 		if (arr.length < 1) {
