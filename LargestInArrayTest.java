@@ -10,5 +10,4 @@ class LargestInArrayTest {
 		int[] actualInput = {12, 45, 2, 31, 89, 90, 33, 76, 2200, 560, 999, 1};
 		assertEquals(expectedInput, largeElement.findLargestElement(actualInput));
 	}
-
 }
