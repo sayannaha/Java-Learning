@@ -4,9 +4,6 @@
 
 Welcome to my Java Learning Repository! This repository is a collection of my journey in learning Java programming. Here, I document my progress, projects, and experiments as I explore the world of Java.
 
-├── projects/             # Mini-projects to apply Java concepts
-├── resources/            # Helpful resources, books, and links
-└── README.md             # This file
 ```
 
 ## 🚀 How to Use This Repository
